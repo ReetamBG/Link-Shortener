@@ -1,0 +1,12 @@
+<h3>Link Shortener</h3>
+
+<form action="/" method="POST">
+    <label for="input">Enter url</label>
+    <input type="text" name="url" placeholder="https://www.xyz.com" pattern="https://.*" required>
+    <button type="submit">Generate</button>
+    <br>
+    {% if url %}
+    <label>Shortened URL : </label>
+    <input type="text" value="{{ shortened_url }}"</p>
+    {% endif %}
+</form>
